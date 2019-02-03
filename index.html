@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	 crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+	<title>Panda | Serach Over Milion Restaurant Review</title>
+</head>
+
+<body>
+	<!--Navrbar-->
+	<nav class="navbar navbar-expand-md navbar-light bg-dark">
+		<div class="container">
+			<div class="navbar__logo">
+				<a class="navbar-brand" href="/">
+					<img src="img/panda.svg" alt="Panda Logo" class="img-thumbnail rounded-circle w-100" />
+				</a>
+			</div>
+			<div class="form-group col-md-4">
+				<input type="text" id="pac-input" class="form-control controls" placeholder="Search By City" />
+			</div>
+			<div class="form-group col-md-4">
+				<input type="text" class="js-range-slider" name="my_range" value="" id="range" />
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section class="over">
+			<div class="row">
+				<div class="col-md-8 map-google">
+					<div id="map"></div>
+				</div>
+				<div id="details" class="col-md-8">
+					<h1 class="title" id="title">Details</h1>
+					<div id="listing-details"></div>
+				</div>
+				<div id="listing-container" class="col-md-4 bg-light listing-con">
+					<div id="listing"></div>
+				</div>
+			</div>
+		</section>
+
+		<div style="display: none">
+			<div id="info-content">
+				<table>
+					<tr id="iw-url-row" class="iw_table_row">
+						<td id="iw-icon" class="iw_table_icon"></td>
+					</tr>
+					<tr id="iw-name-row" class="iw_table_row">
+						<td id="iw-name"></td>
+					</tr>
+					<tr id="iw-address-row" class="iw_table_row">
+						<td id="iw-address"></td>
+					</tr>
+					<tr id="iw-phone-row" class="iw_table_row">
+						<td id="iw-phone"></td>
+					</tr>
+					<tr id="iw-rating-row" class="iw_table_row">
+						<td id="iw-rating"></td>
+					</tr>
+					<tr id="iw-website-row" class="iw_table_row">
+						<td id="iw-website"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="modal fade" id="reviewsModel" tabindex="-1" role="dialog" aria-labelledby="reviewsModelTitle"
+		 aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="reviewsModelTitle">Reviews</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+						<div id="reviews-contanier"></div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- JS, Propper.js, JQuery for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
+	<!-- Google Maps API-->
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
