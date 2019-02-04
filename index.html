@@ -10,13 +10,12 @@
 	 crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 	<title>Panda | Serach Over Milion Restaurant Review</title>
 </head>
 
 <body>
 	<!--Navrbar-->
-	<nav class="navbar navbar-expand-md navbar-light bg-dark">
+	<nav class="navbar navbar-expand-md navbar-light bg-dark text-center">
 		<div class="container">
 			<div class="navbar__logo">
 				<a class="navbar-brand" href="/">
@@ -48,52 +47,64 @@
 			</div>
 		</section>
 
-		<div style="display: none">
-			<div id="info-content">
-				<table>
-					<tr id="iw-url-row" class="iw_table_row">
-						<td id="iw-icon" class="iw_table_icon"></td>
-					</tr>
-					<tr id="iw-name-row" class="iw_table_row">
-						<td id="iw-name"></td>
-					</tr>
-					<tr id="iw-address-row" class="iw_table_row">
-						<td id="iw-address"></td>
-					</tr>
-					<tr id="iw-phone-row" class="iw_table_row">
-						<td id="iw-phone"></td>
-					</tr>
-					<tr id="iw-rating-row" class="iw_table_row">
-						<td id="iw-rating"></td>
-					</tr>
-					<tr id="iw-website-row" class="iw_table_row">
-						<td id="iw-website"></td>
-					</tr>
-				</table>
+		<section>
+			<div style="display: none">
+				<div id="info-content">
+					<table>
+						<tr id="iw-url-row" class="iw_table_row">
+							<td id="iw-icon" class="iw_table_icon"></td>
+						</tr>
+						<tr id="iw-name-row" class="iw_table_row">
+							<td id="iw-name"></td>
+						</tr>
+						<tr id="iw-address-row" class="iw_table_row">
+							<td id="iw-address"></td>
+						</tr>
+						<tr id="iw-phone-row" class="iw_table_row">
+							<td id="iw-phone"></td>
+						</tr>
+						<tr id="iw-rating-row" class="iw_table_row">
+							<td id="iw-rating"></td>
+						</tr>
+						<tr id="iw-website-row" class="iw_table_row">
+							<td id="iw-website"></td>
+						</tr>
+					</table>
+				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="modal fade" id="reviewsModel" tabindex="-1" role="dialog" aria-labelledby="reviewsModelTitle"
-		 aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="reviewsModelTitle">Reviews</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
+		<section>
+			<div style="display: none">
+				<div id="add-form">
+				</div>
+			</div>
+		</section>
 
-						<div id="reviews-contanier"></div>
+		<section>
+			<div class="modal fade" id="reviewsModel" tabindex="-1" role="dialog" aria-labelledby="reviewsModelTitle"
+			 aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="reviewsModelTitle">Reviews</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
 
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<div id="reviews-contanier"></div>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
 
 	</main>
 

@@ -119,3 +119,20 @@ select#sortby {
 
 .btn-review {
   font-size: 2.4rem; }
+
+@media (max-width: 768px) {
+  .navbar__logo {
+    margin: 1rem auto; }
+  #details {
+    padding: 5rem; }
+  .close-btn {
+    right: 5%; }
+  #map {
+    height: calc(100vh - 192px);
+    overflow: auto; }
+  .listing-con {
+    height: 100vh;
+    padding: 3rem 0; }
+  #listing .list-item {
+    padding-right: 5rem;
+    padding-left: 5rem; } }
