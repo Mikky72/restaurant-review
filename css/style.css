@@ -59,6 +59,9 @@ body {
     border-color: #FF3366;
     box-shadow: none; }
 
+.navbar-brand {
+  display: inline; }
+
 #map,
 .listing-con {
   height: calc(100vh - 85px);
