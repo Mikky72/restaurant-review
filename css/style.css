@@ -31,6 +31,10 @@ body {
   min-height: 100vh;
   font-size: 1.6rem; }
 
+.txarea {
+  padding: 1.5rem;
+  line-height: 1.4rem; }
+
 ::-webkit-input-placeholder {
   text-align: center; }
 
